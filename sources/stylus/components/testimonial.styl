@@ -1,0 +1,96 @@
+.testimonial
+    background: $siteColorGrey 
+    padding: 100px 0
+    &__main
+        &-item
+            width: 263px;
+            height: 263px;
+            border-radius: 10px;
+            overflow hidden
+            margin: 0 auto
+            position relative
+            &_img
+                &-icon
+                    position absolute
+                    top 15px
+                    right 15px
+            &_title
+                position absolute
+                bottom 53px
+                left 16px
+                font-weight: bold
+                font-size: 14px
+                font-family: 'Montserrat', sans-serif;
+                color: $white
+            &_desc
+                position absolute
+                bottom 11px
+                left 16px
+                font-size: 13px
+                color: $white
+                max-width: 231px
+                height 36px
+                overflow hidden
+    .testimonial-links
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        +below($max-md)
+            flex-wrap: wrap
+        .testimonial-openpop
+            width: 25%
+            +below($max-md)
+                width 50%
+                margin: 15px 0
+            +below($max-xs)
+                width 100%
+    .testimonial-openpop
+        cursor pointer
+        +below($max-sm)
+            text-align: center
+        &-iframe
+            pointer-events: none
+            border-radius: 10px
+            max-width: 560px;
+            width: 100%;
+    .testimonial-openpop.none
+        pointer-events: none!important
+    .testimonial-popup-iframe
+        display none
+        position fixed
+        z-index 99999
+        background rgba(0, 0, 0, 0.8)
+        top 0
+        right 0
+        bottom 0
+        left 0
+        &-item
+            max-width: 90vw;
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 5%;
+            iframe
+                width: 90%;
+                height: 500px;
+                margin: 0 auto;
+                display: block;
+                border: none;
+                border-radius: 10px;
+            .btn
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+                font-weight: bold;
+                position: absolute;
+                top: 25px;
+                right: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-shadow: none;
+                opacity 1
+                outline: none;
+                border: none

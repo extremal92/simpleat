@@ -1,0 +1,91 @@
+body
+  color: $black
+  position: relative
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+
+button
+  outline: none
+  border: none 
+
+.btn.active.focus, 
+.btn.active:focus, 
+.btn.focus, 
+.btn:active.focus, 
+.btn:active:focus, 
+.btn:focus
+  outline: none
+  outline-offset none
+  border: none
+
+  
+a
+  outline: none;
+  text-decoration: none!important;
+  color: inherit 
+  &:focus
+    color: inherit 
+
+.page
+  &__title
+    color: $black
+    width: 100%
+    font-family: "Bebas Neue Regular"
+    text-align: center
+    margin-bottom: 40px
+    text-transform: uppercase
+    h1
+      position relative
+      margin: 0
+      font-size: 60px
+      &:after
+        content ''
+        display block
+        background url("/assets/img/title-img.png") center no-repeat
+        width: 40px;
+        height: 10px;
+        position absolute
+        bottom -20px
+        left 50%
+        transform translateX(-50%)
+      +below($max-xs)
+        font-size: 40px
+    &--white
+      color: $white
+      h1
+        &:after
+          background url("/assets/img/title-img-white.png") center no-repeat
+  &__desc
+    text-align: center
+    margin-bottom: 48px
+    span
+        color: $black
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        +below($max-sm)
+          width: 100%
+    &--white
+      span
+        color: $white
+  &__ship
+    margin-top: 10px
+    font-weight: bold
+
+
+
+.btn
+  background-color: $siteColorGreen
+  text-align: center
+  cursor: pointer
+  color: $white
+  transition: ease-in-out .3s
+  border-radius: 6px;
+  border: none
+  &:hover
+    color: $white;
+    opacity: 0.75; 
+

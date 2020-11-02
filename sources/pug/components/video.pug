@@ -1,0 +1,20 @@
+.video
+    .container
+        .video__main
+            .video__main-item
+                .page__title.page__title--white
+                    h1 What is Simpleat?
+                .page__desc.page__desc--white
+                    span Simpleat is made to provide the perfectly balanced diet with every nutrient your body needs for optimal health.
+                    span Simpleat will take care of your hunger while you have more important things to do whether it is your work, business, travel or simply having fun.
+            .video__main-item
+                .links
+                    //- a.openpop(href='https://www.youtube.com/embed/NbcvXCscNKM?start=13') 
+                    div.openpop(href='https://www.youtube.com/embed/jDFHX4qSBb4?controls=0&start=2') 
+                        iframe.openpop-iframe(src='https://www.youtube.com/embed/jDFHX4qSBb4?controls=0&start=2' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='' width='560' height='315' frameborder='0')
+                .popup-iframe
+                    .popup-iframe-item
+                        iframe.video-iframe-link(src='')
+                            | <p>Your browser does not support iframes.</p>
+                        button.btn.btn-close X
+

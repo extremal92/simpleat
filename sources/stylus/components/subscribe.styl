@@ -1,0 +1,40 @@
+.subscribe
+    padding: 100px 0 90px 0
+    &__form
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        +below($max-xs)
+            flex-wrap: wrap
+        &-mail
+            border-radius: 6px;
+            font-family: 'Montserrat', sans-serif;
+            background: none
+            color: $black
+            height: 64px
+            max-width: 513px
+            width: 100%
+            border 2px solid $siteColorBorder
+            box-sizing: border-box
+            font-size: 24px
+            margin-right: 20px
+            padding-left: 14px
+            &::-webkit-input-placeholder
+                color $black
+            &::-moz-placeholder
+                color $black
+            &:-ms-input-placeholder
+                font-size: 16px
+            &:-moz-placeholder
+                font-size: 16px
+            +below($max-xs)
+                margin 0 0 20px 0
+        .btn
+            width: 221px;
+            height: 64px;
+            font-size: 24px
+            font-weight: bold
+            font-family: 'Montserrat', sans-serif;
+
+
+

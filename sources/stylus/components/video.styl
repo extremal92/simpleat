@@ -1,0 +1,65 @@
+.video
+    background: $siteColorMentol
+    padding: 100px 0
+    &__main
+        display: flex
+        +below($max-sm)
+            flex-wrap: wrap
+        &-item
+            width: 50%
+            +below($max-sm)
+                width 100%
+                &:first-child
+                    margin-bottom: 30px
+            .page__desc
+                span
+                    &:first-child
+                        margin-bottom: 20px
+            .openpop
+                cursor pointer
+                +below($max-sm)
+                    text-align: center
+                &-iframe
+                    pointer-events: none
+                    border-radius: 10px
+                    max-width: 560px;
+                    width: 100%;
+            .popup-iframe
+                display none
+                position fixed
+                z-index 99999
+                background rgba(0, 0, 0, 0.8)
+                top 0
+                right 0
+                bottom 0
+                left 0
+                &-item
+                    max-width: 90vw;
+                    width: 100%;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    padding: 5%;
+                    iframe
+                        width: 90%;
+                        height: 500px;
+                        margin: 0 auto;
+                        display: block;
+                        border: none;
+                        border-radius: 10px;
+                    .btn
+                        width: 40px;
+                        height: 40px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        position: absolute;
+                        top: 25px;
+                        right: 25px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-shadow: none;
+                        opacity 1
+                        outline: none;
+                        border: none

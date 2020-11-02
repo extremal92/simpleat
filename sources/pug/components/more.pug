@@ -1,0 +1,51 @@
+.more
+    .container
+    .more__main
+        .more__main-item.more__main-item_img
+            img(src='assets/img/Bottles.png')
+        .more__main-item
+            .page__title
+                h1 More than food
+            .page__desc
+                span Everything your body needs in one bottle of Simpleat. Drink Simpleat and forget about hunger. Be the first to try nutrition designed for your needs.
+                .page__ship
+                    span Free shipping for orders over €90
+            .more__main-item_select
+                select#sources.custom-select.sources(name='sources' placeholder='12 bottles')
+                    option(value='12') 12 bottles
+                    option(value='24') 24 bottles
+                    option(value='36') 36 bottles
+                    option(value='48') 48 bottles
+                    option(value='60') 60 bottles
+                    option(value='72') 72 bottles
+                    option(value='84') 84 bottles
+                    option(value='96') 96 bottles
+                    option(value='108') 108 bottles
+                    option(value='120') 120 bottles
+            .more__main-item_option
+                .radio
+                    .radio__item
+                        input#first(type='radio' name='numbers' value='first')
+                        label(for='first')
+                            span.bold One-Time
+                            span Purchase
+                            //- .radio__item-help
+                            //-     span Everything your body needs in one bottle of Simpleat.
+                            //-     span Everything your body needs in one bottle of Simpleat.
+                            //-     a(href='#') Learn More
+                    .radio__item
+                        input#second(type='radio' name='numbers' value='second' checked) 
+                        label(for='second')
+                            span.bold Subscribe
+                            span and save 5%
+                            .radio__item-help
+                                span Everything your body needs in one bottle of Simpleat.
+                                span Everything your body needs in one bottle of Simpleat.
+                                a(href='#') Learn More
+            .more__main-item_buy
+                .more__main-item_buy-price
+                    span.bold €32
+                    span €2.60 per meal (400 kcal)
+                .more__main-item_buy-btn
+                    button.btn Add to cart
+

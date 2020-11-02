@@ -1,0 +1,49 @@
+.order
+    padding: 100px 0
+    &__main
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        +below($max-xs)
+            justify-content: space-around
+        &-item
+            width 16.6%
+            padding: 0 10px
+            +below($max-sm)
+                width 33.3%
+                min-width 185px
+                margin: 15px 0
+            &_img
+                max-width: 165px
+                width: 100%
+                height 165px
+                text-align: center
+                margin: 0 auto
+                img
+                    width 100%
+                    height 100%
+                    object-fit contain
+            &_title
+                max-width: 165px
+                width: 100%
+                font-family: "Bebas Neue Regular"
+                font-size: 24px
+                text-align: center
+                margin: 20px auto
+            &_desc
+                max-width: 165px
+                width: 100%
+                font-family: 'Montserrat', sans-serif;
+                font-size: 13px
+                text-align: center
+                margin: 0 auto
+    &__btn
+        text-align: center
+        margin-top: 24px
+        .btn
+            width: 249px;
+            height: 60px;
+            font-size: 18px;
+            font-weight: bold
+            font-family: 'Montserrat', sans-serif;
+
